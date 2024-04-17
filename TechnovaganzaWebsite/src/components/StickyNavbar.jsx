@@ -2,8 +2,9 @@ import React from 'react'
 
 const StickyNavbar = () => {
   return (
-    <div>
-      <div className='flex justify-between  items-center bg-gray-600 text-white  z-50 py-8 px-6 w-full'>
+    <div className='sticky top-0'>
+      
+      <div className='flex justify-between  items-center  text-white  z-50 py-8 px-6 w-full bg-opacity-60 bg-[url(/src/assets/starbg.webp)]'>
         <a href="#Home" className=' hover:text-yellow-500 
         hover:underline'>LOGO</a>
         
