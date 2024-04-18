@@ -5,9 +5,9 @@ const Banner = () => {
     <>
     <div className= "bg-[url('/src/assets/starbg.webp')]">
       <div id='main' className="flex w-5/6 flex-col justify-center mx-auto py-6 items-center">
-          <img src={img} alt=""  className='pt-5 pb-5 w-2/4 h-'/>
+          <img src={img} alt=""  className='pt-5 pb-5 w-2/4 mb-10'/>
           
-          <button className='text-white  border-spacing-2 py-7 border w-fit  bg-yellow-500 hover:bg-yellow-600 text-white font-bold px-4 border border-yellow-600 rounded   transition: all 0.2s ease-in-out; hover:shadow-2xl'><a href="#book">BOOK TICKET</a></button>
+          <button className='text-white  border-spacing-2 py-4 border w-fit  bg-yellow-500 hover:bg-yellow-600 text-white font-extrabold px-5 border border-yellow-600 rounded   transition: all 0.2s ease-in-out; hover:shadow-2xl mt-10  '><a href="#book">BOOK TICKET</a></button>
       </div>
     </div>
     <div className="text-center pt-7  bg-[url('/src/assets/future3.webp')] bg-no-repeat bg-cover">
