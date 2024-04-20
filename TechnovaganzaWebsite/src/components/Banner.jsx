@@ -1,16 +1,29 @@
 import React from 'react'
 import img from "../assets/LOGO-removebg.png"
 import img2 from "../assets/webWallpaper.webp"
+import Events from './Events.jsx'
+import video1 from "../assets/stars2.mp4"
+import Footer from './Footer.jsx'
 const Banner = () => {
   return (
     <>
-    <div className= "bg-[url('/src/assets/starbg.webp')] pb-40">
-      <div id='main' className="flex w-5/6 flex-col justify-center mx-auto py-6 items-center">
-          <img src={img} alt=""  className='pt-5 pb-5 w-2/4 mb-10'/>
-          
-          <button className='text-white  border-spacing-2 py-4 border w-fit  bg-yellow-500 hover:bg-yellow-600 text-white font-extrabold px-5 border border-yellow-600 rounded   transition: all 0.2s ease-in-out; hover:shadow-2xl mt-20  '><a href="#book">Registration</a></button>
-      </div>
-    </div>
+   <header className="bg-black relative flex items-center justify-center h-screen pb-12 overflow-hidden">
+          <div className="relative z-30 p-10 text-white  bg-opacity-50 text-center">
+            <img src={img} alt="" />
+            <button className="text-white  border-spacing-2 py-4 border w-fit  bg-yellow-500 hover:bg-yellow-600 text-white font-extrabold px-5 border border-yellow-600 rounded   transition: all 0.2s ease-in-out; hover:shadow-2xl mt-20  ">
+              <a href="#book">Register Now</a>
+            </button>
+          </div>
+          <video
+            className="videoTag absolute z-10 w-auto min-w-full min-h-full max-w-none"
+            autoPlay
+            loop
+            muted
+          >
+            <source src={video1} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </header>
     <div className="text-center p-20  bg-[url('/src/assets/robo-removebg.png')] bg-no-repeat bg-black bg-center ">
     <h1 className='pb-8 text-yellow-400 text-5xl  font-semibold '>ABOUT</h1>
       <div id='about' className='grid grid-cols-2 ml-0 col-auto content-center justify-items-center'>
@@ -74,26 +87,7 @@ const Banner = () => {
       </div>
       </div>
     </div>
-    <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
-    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
-    </span>
-    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
-        <li>
-            <a href="#" class="hover:underline me-4 md:me-6">About</a>
-        </li>
-        <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-        </li>
-        <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-        </li>
-        <li>
-            <a href="#" class="hover:underline">Contact</a>
-        </li>
-    </ul>
-    </div>
-</footer>
+   <Footer/>
 
     </>
     
