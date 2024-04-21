@@ -18,6 +18,7 @@ const App = () => {
           <Route path="/Gallery" element={<Gallery/>} />
         </Routes>
       </Router>
+      <Home/>
     </div>
   );
 };
