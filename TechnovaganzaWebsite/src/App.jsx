@@ -14,7 +14,7 @@ const App = () => {
         <StickyNavbar />
       
         <Routes>
-        <Route path="/Home" element={<Home/>} />
+        <Route path="/" element={<Home/>} />
           <Route path="/Events" element={<Events/>} />
           <Route path="/Gallery" element={<Gallery/>} />
         </Routes>
