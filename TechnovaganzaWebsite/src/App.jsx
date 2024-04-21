@@ -11,14 +11,8 @@ const App = () => {
   return (
     <div className='bg-black'>
       <Router>
-        <Routes>
-        <Route path="/" element={<Home/>} />
-        </Routes>
-      </Router>
-      <Router>
         <StickyNavbar />
         <Routes>
-        
         <Route path="/Home" element={<Home/>} />
           <Route path="/Events" element={<Events/>} />
           <Route path="/Gallery" element={<Gallery/>} />
