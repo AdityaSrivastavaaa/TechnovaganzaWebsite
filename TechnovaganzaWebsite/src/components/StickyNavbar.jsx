@@ -10,7 +10,7 @@ const StickyNavbar = () => {
         <img src={img} alt="" className='w-56'/>
         <ul className="flex space-x-20">
         <li className='text-3xl text-yellow-300 hover:text-blue-950 '>
-            <Link to="/Home" style={{ textDecoration: 'none' } }>HOME</Link>
+            <Link to="/" style={{ textDecoration: 'none' } }>HOME</Link>
           </li>
           <li className='text-3xl text-yellow-300 hover:text-blue-950'>
             <Link to="/Events" style={{ textDecoration: 'none' }}>EVENTS</Link>
