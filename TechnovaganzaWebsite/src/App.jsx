@@ -12,7 +12,7 @@ const App = () => {
     <div className='bg-black'>
       <Router>
         <StickyNavbar />
-        <Home/>
+      
         <Routes>
         <Route path="/Home" element={<Home/>} />
           <Route path="/Events" element={<Events/>} />
