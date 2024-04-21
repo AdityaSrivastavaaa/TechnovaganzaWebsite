@@ -4,6 +4,7 @@ import app from "../assets/appDev.webp";
 import web from "../assets/webDev.webp";
 import hack from "../assets/hackathon.webp";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 const Events = () => {
   return (
     <>
@@ -45,11 +46,11 @@ const Events = () => {
                 Here are the biggest enterprise technology acquisitions of 2021
                 so far, in reverse chronological order.
               </p>
-              <button className="border border-yellow-500 px-4 py-3 ml-3 hover:bg-yellow-300 hover:text-black">
-                <a href="#Events" className="text-white hover:text-black">
+              <Link to="/AppDev">
+                <button className="border border-yellow-500 px-4 py-3 ml-3 hover:bg-yellow-300 hover:text-black text-white">
                   Explore More
-                </a>
-              </button>
+                </button>
+              </Link>
             </div>
           </div>
           <div class="max-w-sm bg-transparent  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-5">
@@ -66,11 +67,32 @@ const Events = () => {
                 Here are the biggest enterprise technology acquisitions of 2021
                 so far, in reverse chronological order.
               </p>
-              <button className="border border-yellow-500 px-4 py-3 ml-3 hover:bg-yellow-300 hover:text-black">
-                <a href="#Events" className="text-white hover:text-black">
+              <Link to="/AppDev">
+                <button className="border border-yellow-500 px-4 py-3 ml-3 hover:bg-yellow-300 hover:text-black text-white">
                   Explore More
-                </a>
-              </button>
+                </button>
+              </Link>
+            </div>
+          </div>
+          <div class="max-w-sm bg-transparent  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-5">
+            <a href="#">
+              <img className="" src={web} alt="" />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-yellow-400 ">
+                  Noteworthy technology acquisitions 2021
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-white ">
+                Here are the biggest enterprise technology acquisitions of 2021
+                so far, in reverse chronological order.
+              </p>
+              <Link to="/AppDev">
+                <button className="border border-yellow-500 px-4 py-3 ml-3 hover:bg-yellow-300 hover:text-black text-white">
+                  Explore More
+                </button>
+              </Link>
             </div>
           </div>
           <div class="max-w-sm bg-transparent  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-5">
@@ -87,11 +109,11 @@ const Events = () => {
                 Here are the biggest enterprise technology acquisitions of 2021
                 so far, in reverse chronological order.
               </p>
-              <button className="border border-yellow-500 px-4 py-3 ml-3 hover:bg-yellow-300 hover:text-black">
-                <a href="#Events" className="text-white hover:text-black">
+              <Link to="/AppDev">
+                <button className="border border-yellow-500 px-4 py-3 ml-3 hover:bg-yellow-300 hover:text-black text-white">
                   Explore More
-                </a>
-              </button>
+                </button>
+              </Link>
             </div>
           </div>
           <div class="max-w-sm bg-transparent  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-5">
@@ -108,11 +130,11 @@ const Events = () => {
                 Here are the biggest enterprise technology acquisitions of 2021
                 so far, in reverse chronological order.
               </p>
-              <button className="border border-yellow-500 px-4 py-3 ml-3 hover:bg-yellow-300 hover:text-black">
-                <a href="#Events" className="text-white hover:text-black">
+              <Link to="/AppDev">
+                <button className="border border-yellow-500 px-4 py-3 ml-3 hover:bg-yellow-300 hover:text-black text-white">
                   Explore More
-                </a>
-              </button>
+                </button>
+              </Link>
             </div>
           </div>
           <div class="max-w-sm bg-transparent  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-5">
@@ -129,11 +151,11 @@ const Events = () => {
                 Here are the biggest enterprise technology acquisitions of 2021
                 so far, in reverse chronological order.
               </p>
-              <button className="border border-yellow-500 px-4 py-3 ml-3 hover:bg-yellow-300 hover:text-black">
-                <a href="#Events" className="text-white hover:text-black">
+              <Link to="/AppDev">
+                <button className="border border-yellow-500 px-4 py-3 ml-3 hover:bg-yellow-300 hover:text-black text-white">
                   Explore More
-                </a>
-              </button>
+                </button>
+              </Link>
             </div>
           </div>
           <div class="max-w-sm bg-transparent  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-5">
@@ -150,11 +172,11 @@ const Events = () => {
                 Here are the biggest enterprise technology acquisitions of 2021
                 so far, in reverse chronological order.
               </p>
-              <button className="border border-yellow-500 px-4 py-3 ml-3 hover:bg-yellow-300 hover:text-black">
-                <a href="#Events" className="text-white hover:text-black">
+              <Link to="/AppDev">
+                <button className="border border-yellow-500 px-4 py-3 ml-3 hover:bg-yellow-300 hover:text-black text-white">
                   Explore More
-                </a>
-              </button>
+                </button>
+              </Link>
             </div>
           </div>
           <div class="max-w-sm bg-transparent  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-5">
@@ -171,11 +193,11 @@ const Events = () => {
                 Here are the biggest enterprise technology acquisitions of 2021
                 so far, in reverse chronological order.
               </p>
-              <button className="border border-yellow-500 px-4 py-3 ml-3 hover:bg-yellow-300 hover:text-black">
-                <a href="#Events" className="text-white hover:text-black">
+              <Link to="/AppDev">
+                <button className="border border-yellow-500 px-4 py-3 ml-3 hover:bg-yellow-300 hover:text-black text-white">
                   Explore More
-                </a>
-              </button>
+                </button>
+              </Link>
             </div>
           </div>
           <div class="max-w-sm bg-transparent  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-5">
@@ -192,37 +214,16 @@ const Events = () => {
                 Here are the biggest enterprise technology acquisitions of 2021
                 so far, in reverse chronological order.
               </p>
-              <button className="border border-yellow-500 px-4 py-3 ml-3 hover:bg-yellow-300 hover:text-black">
-                <a href="#Events" className="text-white hover:text-black">
+              <Link to="/AppDev">
+                <button className="border border-yellow-500 px-4 py-3 ml-3 hover:bg-yellow-300 hover:text-black text-white">
                   Explore More
-                </a>
-              </button>
-            </div>
-          </div>
-          <div class="max-w-sm bg-transparent  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-5">
-            <a href="#">
-              <img class="" src={app} alt="" />
-            </a>
-            <div class="p-5">
-              <a href="#">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-yellow-400 ">
-                  Noteworthy technology acquisitions 2021
-                </h5>
-              </a>
-              <p class="mb-3 font-normal text-white ">
-                Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order.
-              </p>
-              <button className="border border-yellow-500 px-4 py-3 ml-3 hover:bg-yellow-300 hover:text-black">
-                <a href="#Events" className="text-white hover:text-black">
-                  Explore More
-                </a>
-              </button>
+                </button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

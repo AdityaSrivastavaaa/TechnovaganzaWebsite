@@ -6,6 +6,7 @@ import video1 from "../assets/stars2.mp4";
 import Footer from "./Footer.jsx";
 import aditya from "../assets/adi1-removebg-preview.png"
 import shivansh from "../assets/Screenshot_from_2024-04-20_16-03-34-removebg-preview.png"
+import { Link } from 'react-router-dom';
 const Banner = () => {
   return (
     <>
@@ -56,9 +57,11 @@ const Banner = () => {
               ipsum mollitia velit laudantium odio? Autem dignissimos cumque
               obcaecati?
             </p>
+            <Link to="/Events">
             <button className="border border-yellow-500 px-4 py-3 ml-3 hover:text-black hover:bg-yellow-300">
-              <a href="#Events">Explore More</a>
+              Explore More
             </button>
+            </Link>
           </div>
           <div className="max-w-sm p-10 m-10 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 bg-opacity-0 text-white text-justify">
             <h1 className="text-yellow-500 text-xl font-bold p-3">Programs</h1>
@@ -127,9 +130,11 @@ const Banner = () => {
             <p className="text-xl p-3">
               "Maze Mastery Begins , Navigate the Future with your Micro Buddy"
             </p>
+            <Link to="/Events">
             <button className="border border-yellow-500 px-4 py-3 ml-3 hover:text-black hover:bg-yellow-300">
-              <a href="#Events">Explore More</a>
+              Explore More
             </button>
+            </Link>
           </div>
         </div>
         <div id="developers" className="text-white gap-x-4 w-full h-full text-center">
