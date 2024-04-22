@@ -1,13 +1,25 @@
 import React from "react";
 import img from "../assets/LOGO-removebg.png";
 import img2 from "../assets/webWallpaper.webp";
+import AppDev from "../assets/appDev.webp"
 import Events from "./Events.jsx";
 import video1 from "../assets/stars2.mp4";
 import Footer from "./Footer.jsx";
-import aditya from "../assets/adi1-removebg-preview.png"
-import shivansh from "../assets/Screenshot_from_2024-04-20_16-03-34-removebg-preview.png"
-import { Link } from 'react-router-dom';
+import aditya from "../assets/adi1-removebg-preview.png";
+import shivansh from "../assets/Screenshot_from_2024-04-20_16-03-34-removebg-preview.png";
+import M2m from "../assets/m2m.png";
+import M2M from "../assets/m2m.pdf";
+import { Link } from "react-router-dom";
 const Banner = () => {
+  const onButtonClick = () => {
+    const pdfUrl = M2M;
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "Minute-to-Minute.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <>
       <header className="bg-black relative flex items-center justify-center h-screen pb-12 overflow-hidden">
@@ -58,9 +70,9 @@ const Banner = () => {
               obcaecati?
             </p>
             <Link to="/Events">
-            <button className="border border-yellow-500 px-4 py-3 ml-3 hover:text-black hover:bg-yellow-300">
-              Explore More
-            </button>
+              <button className="border border-yellow-500 px-4 py-3 ml-3 hover:text-black hover:bg-yellow-300">
+                Explore More
+              </button>
             </Link>
           </div>
           <div className="max-w-sm p-10 m-10 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 bg-opacity-0 text-white text-justify">
@@ -120,38 +132,56 @@ const Banner = () => {
         </div>
       </div>
       <div className="bg-[url('/src/assets/blackBg.webp')]  ">
-        <div className="flex items-center justify-center mx-auto p-40">
+        <div className="flex justify-center  mx-auto p-40">
           <div className="mr-40">
-            <img src={img2} alt="" />
+            <img src={AppDev} alt="" />
           </div>
           <div className="text-white h-52">
             <h1 className="text-yellow-500 text-6xl font-bold p-3">EVENTS</h1>
-            <h2 className="text-2xl p-3">NANO-NAVIGATOR</h2>
+            <h2 className="text-2xl p-3">APP-DEVELOPMENT</h2>
             <p className="text-xl p-3">
-              "Maze Mastery Begins , Navigate the Future with your Micro Buddy"
+              "Making an app is like drinking a cup of coffee."
             </p>
             <Link to="/Events">
-            <button className="border border-yellow-500 px-4 py-3 ml-3 hover:text-black hover:bg-yellow-300">
-              Explore More
-            </button>
+              <button className="border border-yellow-500 px-4 py-3 ml-3 hover:text-black hover:bg-yellow-300">
+                Explore More
+              </button>
             </Link>
           </div>
         </div>
-        <div id="developers" className="text-white gap-x-4 w-full h-full text-center">
-          <h1 className="text-7xl font-semibold text-yellow-400">DEVELOPED BY</h1>
+        <div
+          id="M2M"
+          className="text-white gap-x-4 w-full h-full text-center mb-10"
+        >
+          <h1 className="text-4xl font-semibold text-yellow-400">
+            MINUTE TO MINUTE
+          </h1>
           <div className="flex justify-items-center m-auto justify-around">
-          <div className="flex flex-col items-center justify-center">
-            <img src={aditya} alt="" className="h-96 align-middle"/>
-            <h1 className="text-4xl text-yellow-200">Aditya Srivastava</h1>
-            <h3 className="text-2xl ">B.TECH 3rd Year</h3>
+            <div className="flex flex-col items-center justify-center">
+              <img src={M2m} alt="" className="h-auto align-middle mt-10" />
+              <button onClick={onButtonClick} className="border border-yellow-300 px-3 py-2 m-9 text-xl font-semibold text-yellow-400 hover:bg-yellow-300 hover:text-black">Download PDF</button>
+            </div>
           </div>
-          <div className="flex flex-col items-center justify-center">
-            <img src={shivansh} alt="" className="h-96"/>
-            <h1 className="text-4xl text-yellow-200">Shivash Bhatnagar</h1>
-            <h3 className="text-2xl">B.TECH 3rd Year</h3>
+        </div>
+        <div
+          id="developers"
+          className="text-white gap-x-4 w-full h-full text-center"
+        >
+          <h1 className="text-7xl font-semibold text-yellow-400">
+            DEVELOPED BY
+          </h1>
+          <div className="flex justify-items-center m-auto justify-around">
+            <div className="flex flex-col items-center justify-center">
+              <img src={aditya} alt="" className="h-96 align-middle" />
+              <h1 className="text-4xl text-yellow-200">Aditya Srivastava</h1>
+              <h3 className="text-2xl ">B.TECH 3rd Year</h3>
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <img src={shivansh} alt="" className="h-96" />
+              <h1 className="text-4xl text-yellow-200">Shivash Bhatnagar</h1>
+              <h3 className="text-2xl">B.TECH 3rd Year</h3>
+            </div>
           </div>
-          </div>
-          
         </div>
       </div>
       <Footer />
